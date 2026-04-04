@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================
+NUDGE THEME VARIABLES
+Centralized palette used across the UI
+========================================================= */
+
+:root {
+
+/* Primary Accent */
+--accent-orange: #f68b2d;
+--accent-orange-hover: #ffa14f;
+
+/* Control Surfaces (Cognitive Bar etc) */
+--nav-bg: #4b1e17;
+--nav-bg-secondary: #5a231b;
+
+/* Chat Surface */
+--chat-bg: #2b2b2e;
+--chat-text: #f2f2f3;
+
+/* Workspace Surface (Parchment) */
+--background: "#fafafa"
+--workspace-text: #2b2b2b;
+
+/* Panel / Divider */
+--panel-border: rgba(255,255,255,0.08);
+
+/* Chat bubbles */
+--bubble-bg: #333338;
+--bubble-border: #3e3e44;
+
+}
+
+/* =========================================================
+BASE LAYOUT
+========================================================= */
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: var(--chat-bg);
+  color: var(--chat-text);
+}
+
+/* =========================================================
+CONVERSATION BUBBLES
+========================================================= */
+
+.conversation-bubble {
+  background-color: var(--bubble-bg);
+  color: var(--chat-text);
+  padding: 12px 14px;
+  border-radius: 12px;
+  max-width: 85%;
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  border: 1px solid var(--bubble-border);
+}
+
+/* =========================================================
+EXECUTION / STATUS BUBBLES
+========================================================= */
+
+.execution-bubble {
+  background-color: rgba(30, 58, 138, 0.25);
+  color: #dbeafe;
+  padding: 8px 12px;
+  border-radius: 8px;
+  max-width: 80%;
+  font-size: 12px;
+  line-height: 1.35;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  opacity: 0.9;
+}
+
+/* =========================================================
+NUDGE THEME ROOT OVERRIDES
+Tailwind handles layout, theme controls color
+========================================================= */
+
+.h-screen.w-screen {
+  background: var(--chat-bg) !important;
+  color: var(--chat-text) !important;
+}

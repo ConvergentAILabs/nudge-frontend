@@ -1,0 +1,305 @@
+/* =========================================================
+NUDGE THEME SYSTEM
+Locked palette based on approved design reference
+========================================================= */
+
+/* ---------- Shared Brand Colors ---------- */
+
+:root {
+
+--accent-orange: #F68B2D;
+--accent-orange-hover: #FFA14F;
+
+--border-soft: rgba(0,0,0,0.08);
+--shadow-soft: 0 8px 30px rgba(0,0,0,0.15);
+
+/* Depth / elevation layers */
+--surface-depth-1: rgba(0,0,0,0.04);
+--surface-depth-2: rgba(0,0,0,0.06);
+
+/* ---------- Nudge Notifications ---------- */
+
+--nudge-bg: #fff3e0;
+--nudge-border: #f4c37a;
+--nudge-text: #5c3a00;
+--nudge-accent: #8a4b00;
+
+/* ---------- Execution Authorization Panel ---------- */
+
+--ea-bg: #fff8f1;
+--ea-border-accent: #d97706;
+--ea-text: #92400e;
+--ea-button-primary: #d97706;
+--ea-button-secondary-bg: #f3f4f6;
+--ea-button-secondary-text: #374151;
+--ea-button-secondary-border: #e5e7eb;
+
+/* ---------- Wizard / Blueprint ---------- */
+
+--wizard-bg: #ffffff;
+--wizard-text: #111827;
+--wizard-subtext: #6b7280;
+--wizard-border: #e5e7eb;
+--wizard-surface: #f9fafb;
+--wizard-overlay: rgba(0,0,0,0.35);
+--wizard-button-primary-bg: #111827;
+--wizard-button-primary-text: #ffffff;
+--wizard-button-secondary-bg: #f9fafb;
+--wizard-button-secondary-text: #374151;
+--wizard-input-bg: #ffffff;
+--wizard-input-text: #111827;
+--wizard-input-placeholder: #9ca3af;
+
+}
+
+/* =========================================================
+DARK MODE
+========================================================= */
+
+[data-theme="dark"] {
+
+/* Navigation / Control surfaces */
+--nav-bg: #202020;
+--nav-header-bg: #181818;
+--nav-bg-secondary: #262626;
+--nav-surface: #2C2C2C;
+--nav-hover: #333333;
+
+/* Chat surface */
+--chat-bg: #2A2A2A;
+--chat-text: #EAEAEA;
+
+/* Chat bubbles */
+--chat-bubble: #363636;
+--chat-user-bubble: #404040;
+--bubble-border: rgba(255,255,255,0.06);
+
+/* Workspace / drafting surfaces */
+--workspace-bg: #343434;
+--workspace-text: #EAEAEA;
+--workspace-surface-border: rgba(255,255,255,0.06);
+
+/* Input / composer surfaces */
+--input-surface-bg: #343434;
+--input-surface-border: rgba(255,255,255,0.08);
+
+/* Generic UI */
+--panel-border: #2A2A2A;
+--surface-elevated: #323236;
+--surface-subtle: #35353A;
+--top-depth-shadow: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0));
+
+/* ---------- Nudge Notifications ---------- */
+
+--nudge-bg: #2f2a24;
+--nudge-border: rgba(255,255,255,0.08);
+--nudge-text: #f5e6d3;
+--nudge-accent: var(--accent-orange);
+
+/* ---------- Execution Authorization Panel ---------- */
+
+--ea-bg: #2f2a24;
+--ea-border-accent: var(--accent-orange);
+--ea-text: #f5e6d3;
+--ea-button-primary: var(--accent-orange);
+--ea-button-secondary-bg: var(--surface-subtle);
+--ea-button-secondary-text: var(--chat-text);
+--ea-button-secondary-border: var(--panel-border);
+
+/* ---------- Wizard / Blueprint ---------- */
+
+--wizard-bg: #2c2c2f;
+--wizard-text: #EAEAEA;
+--wizard-subtext: rgba(255,255,255,0.65);
+--wizard-border: rgba(255,255,255,0.08);
+--wizard-surface: #323236;
+--wizard-overlay: rgba(0,0,0,0.6);
+--wizard-button-primary-bg: var(--accent-orange);
+--wizard-button-primary-text: #000000;
+--wizard-button-secondary-bg: var(--surface-subtle);
+--wizard-button-secondary-text: var(--chat-text);
+--wizard-input-bg: #343434;
+--wizard-input-text: #EAEAEA;
+--wizard-input-placeholder: rgba(255,255,255,0.35);
+
+}
+
+/* =========================================================
+LIGHT MODE
+========================================================= */
+
+[data-theme="light"] {
+
+/* Navigation / Control surfaces */
+--nav-bg: #F3E6DE;
+--nav-header-bg: #E9E1DB;
+--nav-bg-secondary: #E9D6C8;
+--nav-surface: #E9D6C8;
+--nav-hover: #E0C6B4;
+
+/* Chat surface */
+--chat-bg: #FFFFFF;
+--chat-text: #2B2B2B;
+
+/* Chat bubbles */
+--chat-bubble: #F3F4F6;
+--chat-user-bubble: #E5E7EB;
+--bubble-border: rgba(0,0,0,0.08);
+
+/* Workspace / drafting surfaces */
+--workspace-bg: #F7F8FA;
+--workspace-text: #2B2B2B;
+--workspace-surface-border: rgba(0,0,0,0.08);
+
+/* Input / composer surfaces */
+--input-surface-bg: #F7F8FA;
+--input-surface-border: rgba(0,0,0,0.10);
+
+/* Generic UI */
+--panel-border: #FFFFFF;
+--surface-elevated: #F3F4F6;
+--surface-subtle: #E5E7EB;
+--top-depth-shadow: linear-gradient(to bottom, rgba(0,0,0,0.10), rgba(0,0,0,0));
+
+/* ---------- Nudge Notifications ---------- */
+
+--nudge-bg: #fff3e0;
+--nudge-border: #f4c37a;
+--nudge-text: #5c3a00;
+--nudge-accent: #8a4b00;
+
+/* ---------- Execution Authorization Panel ---------- */
+
+--ea-bg: #fff8f1;
+--ea-border-accent: #d97706;
+--ea-text: #92400e;
+--ea-button-primary: #d97706;
+--ea-button-secondary-bg: #f3f4f6;
+--ea-button-secondary-text: #374151;
+--ea-button-secondary-border: #e5e7eb;
+
+/* ---------- Wizard / Blueprint ---------- */
+
+--wizard-bg: #ffffff;
+--wizard-text: #111827;
+--wizard-subtext: #6b7280;
+--wizard-border: #e5e7eb;
+--wizard-surface: #f9fafb;
+--wizard-overlay: rgba(0,0,0,0.35);
+--wizard-button-primary-bg: #111827;
+--wizard-button-primary-text: #ffffff;
+--wizard-button-secondary-bg: #f9fafb;
+--wizard-button-secondary-text: #374151;
+--wizard-input-bg: #ffffff;
+--wizard-input-text: #111827;
+--wizard-input-placeholder: #9ca3af;
+
+}
+
+/* =========================================================
+SMOOTH THEME TRANSITIONS
+========================================================= */
+
+body,
+div,
+button,
+input,
+textarea,
+select {
+transition:
+  background-color 0.25s ease,
+  color 0.25s ease,
+  border-color 0.25s ease,
+  box-shadow 0.25s ease;
+}
+
+/* =========================================================
+GLOBAL COMPONENT TARGETS
+========================================================= */
+
+.message-stream,
+.chat-pane {
+background: var(--chat-bg);
+color: var(--chat-text);
+}
+
+.workspace-pane {
+background: var(--workspace-bg);
+color: var(--workspace-text);
+box-shadow: var(--shadow-soft);
+border: 1px solid var(--workspace-surface-border);
+}
+
+.cognitive-control-bar {
+background: var(--nav-bg);
+border-bottom: 1px solid var(--panel-border);
+}
+
+.surface-elevated {
+background: var(--surface-elevated);
+box-shadow: var(--shadow-soft);
+}
+
+.surface-subtle {
+background: var(--surface-subtle);
+}
+
+button.primary {
+background: var(--accent-orange);
+border: none;
+}
+
+button.primary:hover {
+background: var(--accent-orange-hover);
+}
+
+.selected {
+background: var(--nav-hover);
+}
+
+/* =========================================================
+SCROLLBAR STYLING
+========================================================= */
+
+::-webkit-scrollbar {
+width: 10px;
+}
+
+::-webkit-scrollbar-track {
+background: var(--chat-bg);
+}
+
+::-webkit-scrollbar-thumb {
+background: #3A3A3F;
+border-radius: 6px;
+border: 2px solid var(--chat-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: var(--accent-orange);
+}
+
+* {
+scrollbar-width: thin;
+scrollbar-color: #3A3A3F var(--chat-bg);
+}
+
+/* =========================================================
+CENTER PANE BLUR (PROMPT EDITOR)
+========================================================= */
+
+.center-pane-blur .center-pane {
+filter: blur(2px);
+opacity: 0.65;
+transition: filter 0.15s ease, opacity 0.15s ease;
+}
+
+/* =========================================================
+INPUT FOCUS STYLING
+========================================================= */
+
+input:focus,
+textarea:focus {
+outline: none;
+border-color: var(--accent-orange) !important;
+}
